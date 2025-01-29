@@ -31,7 +31,7 @@ type Transaction struct {
 var db *gorm.DB
 
 func initDB() {
-	dsn := "joelwasike:@Webuye2021@tcp(localhost:3306)/westdatabase?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "mamlakadev:@Mamlaka2021@tcp(localhost:3306)/westsandbox?charset=utf8mb4&parseTime=True&loc=Local"
 	var err error
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
